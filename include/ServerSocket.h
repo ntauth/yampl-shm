@@ -2,7 +2,7 @@
 #define YAMPL_SHM_SERVERSOCKET_H
 
 #include "yampl/generic/ServerSocketBase.h"
-#include "yampl/shm/SimpleServerSocket.h"
+#include "SimpleServerSocket.h"
 
 namespace yampl{
 namespace shm{

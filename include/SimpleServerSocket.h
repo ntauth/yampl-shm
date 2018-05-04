@@ -2,8 +2,8 @@
 #define YAMPL_SHM_SIMPLESERVERSOCKET_H
 
 #include "yampl/generic/SimpleServerSocket.h"
-#include "yampl/shm/ProducerSocket.h"
-#include "yampl/shm/ConsumerSocket.h"
+#include "ProducerSocket.h"
+#include "ConsumerSocket.h"
 
 namespace yampl{
 namespace shm{

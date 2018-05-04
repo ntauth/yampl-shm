@@ -2,7 +2,7 @@
 #define YAMPL_SHM_CLIENTSOCKET_H
 
 #include "yampl/generic/ClientSocket.h"
-#include "yampl/shm/SimpleClientSocket.h"
+#include "SimpleClientSocket.h"
 
 namespace yampl{
 namespace shm{
