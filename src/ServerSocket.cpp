@@ -1,4 +1,4 @@
-#include "yampl/shm/ServerSocket.h"
+#include "ServerSocket.h"
 
 namespace yampl{
 namespace shm{
