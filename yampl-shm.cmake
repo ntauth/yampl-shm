@@ -1,7 +1,7 @@
-#################################
+##
 # YAMPL-SHM
-#################################
-if (WITH_SHM_PLUGIN STREQUAL ON)
+##
+if (WITH_SHM_PLUGIN)
     add_library(yampl-shm SHARED
             plugins/yampl-shm/src/ServerSocket.cpp
             plugins/yampl-shm/src/SHMSocketBase.cpp
@@ -11,14 +11,10 @@ if (WITH_SHM_PLUGIN STREQUAL ON)
 
     target_include_directories(yampl-shm PRIVATE plugins/yampl-shm/include)
 
-    set_target_properties(yampl-shm PROPERTIES SUFFIX ".yam")
     set_target_properties(yampl-shm
             PROPERTIES
-            ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/plugins/yampl-shm"
             LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/plugins/yampl-shm"
-            RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/plugins/yampl-shm"
     )
-    add_dependencies(yampl-shm LibSourcey)
 
     install(TARGETS yampl-shm
             LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/yampl/plugins/yampl-shm
