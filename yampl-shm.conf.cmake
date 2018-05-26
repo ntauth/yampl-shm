@@ -1,10 +1,10 @@
 # YAMPL-SHM
 if (WITH_SHM_PLUGIN)
     add_library(yampl-shm SHARED
-            plugins/yampl-shm/src/ServerSocket.cpp
-            plugins/yampl-shm/src/SHMSocketBase.cpp
-            plugins/yampl-shm/src/SHMSocketFactory.cpp
-            plugins/yampl-shm/src/PluginMain.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/src/ServerSocket.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/src/SHMSocketBase.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/src/SHMSocketFactory.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/src/PluginMain.cpp
             ${YAMPL_PLUGIN_COMMON_SRCS}
     )
 
