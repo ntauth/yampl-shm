@@ -1,5 +1,5 @@
 # YAMPL-SHM
-if (WITH_PLUGIN_SHM)
+if (NOT DEFINED WITH_PLUGIN_SHM OR WITH_PLUGIN_SHM)
     add_library(yampl-shm SHARED
             ${CMAKE_CURRENT_LIST_DIR}/src/ServerSocket.cpp
             ${CMAKE_CURRENT_LIST_DIR}/src/SHMSocketBase.cpp
