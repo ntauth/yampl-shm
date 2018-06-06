@@ -16,6 +16,6 @@ if (NOT DEFINED WITH_PLUGIN_SHM OR WITH_PLUGIN_SHM)
     )
 
     install(TARGETS yampl-shm
-            LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/plugins/yampl-shm
+            LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/plugins
     )
 endif()
